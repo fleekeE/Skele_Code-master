@@ -17,31 +17,36 @@ def main():
    while(endStory > 1):
        # terminal prints can be over multiple lines using """ print """ format,
        # instead of the regular  "print" give it a try
-       print("this is the start of a story, You could pass things to main to include multiple items")
+       print("""Lets begin!
+            Do you know what 2+2 is?""")
        # this is how your story can take input and read it back out
-       userInput = input("Please enter something: ")
+       userInput = input("""Is it:
+                        69
+                        37
+                        64
+                        4""")
        print("Your response was: ", userInput)
        # notice input can output to terminal. Look up the input function for python
        # to see why.
-       userInput = input("""Would you like to play a game?
-                 Yes
-                 No""")
+
        # there are many ways to break this and you should try to write code that
        # catches common cases and check the user for options other than what
        # asked for.
-       if(userInput == "Yes"):
-           print("""!Game will remeber that!
+       if(userInput == "4"):
+           print("""!Correct!
                 ..Decision Internallized into Expand..""")
            moduleReturns = newFunction(userInput)
 
 # This ends the story
-           endStory = 0
-       elif(userInput == "No"):
-           print("goodbye, rerun python main.py to play")
-# This also ends the story
-           endStory = 0
 
-       print("Nice try, choose an listed option buster!")
+       elif(userInput == "69"):
+           print("Is this your confession to being 13 :|")
+       elif(userInput == "37"):
+           print("Nice try..I guess?")
+       elif(userInput == "64"):
+           print("Where in this equation do you see 4x4..Should I contact someone?")
+
+           print("Nice try, choose an listed option buster!")
 
 
 # Remove this and try to run your code to try and understand what it does so
