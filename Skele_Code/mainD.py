@@ -49,8 +49,6 @@ def main():
            print("Nice try, choose an listed option buster!")
 
 
-
-
 # Remove this and try to run your code to try and understand what it does so
 # if you write a main module and its not working you can tell why.
 if __name__ == '__main__':
